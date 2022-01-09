@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA,AAAA,CAAC,CAAA;EACG,MAAM,EAAC,CAAC;EACR,OAAO,EAAC,CAAC;EACT,UAAU,EAAC,UAAU;CACxB;;AAKD,AAAA,IAAI,CAAA;EACA,WAAW,EAJN,SAAS,EAAE,UAAU;CAK7B",
+    "sources": [
+        "sass/styel.scss"
+    ],
+    "names": [],
+    "file": "styel.css"
+}
