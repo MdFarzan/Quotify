@@ -6,8 +6,49 @@
 
 $p-font: 'PT Sans', sans-serif;
 $s-font: 'Lobster', cursive;
+$pm-color: #101820ff;
+$sec-color: #fee715ff;
+$accent-color:#fff;
+
 
 body{
     font-family: $p-font;
 }
 
+body, .wrapper{
+    background-color: $pm-color;
+}
+
+// default styling
+
+a{
+    color:$sec-color;
+}
+
+.wrapper{
+    max-width: 1270px;
+    margin:0 auto;
+    // background-color: white;
+}
+
+header{
+    padding:25px 0;
+    
+    span.logo{
+        font:{
+            family: $s-font;
+            size:40px;
+            
+        }
+        color:$accent-color;
+        
+    }
+}
+
+
+
+footer{
+    text-align: center;
+    color:$accent-color;
+    padding:25px 0;
+}
