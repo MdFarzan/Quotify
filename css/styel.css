@@ -70,6 +70,65 @@ main {
   color: #fee715ff;
 }
 
+.flex-box {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+.flex-box .box:first-child {
+  width: 22%;
+}
+
+.flex-box .box:last-child {
+  width: 78%;
+}
+
+#quote-mark {
+  color: #fff;
+  font-size: 10em;
+  font-family: "Lobster", cursive;
+}
+
+blockquote {
+  font-size: 1.6em;
+  color: #fee715ff;
+  display: block;
+  margin-top: 4em;
+  padding: 10px 15px;
+}
+
+blockquote cite {
+  display: block;
+  font-size: 20px;
+  text-align: right;
+  text-decoration: underline;
+  margin-top: 15px;
+  color: #fff;
+}
+
+.ref-icon {
+  text-align: center;
+  font-size: 2em;
+  margin-top: 20px;
+}
+
+.ref-icon a {
+  color: #fff;
+  -webkit-transition: 300ms ease-out;
+  transition: 300ms ease-out;
+}
+
+.ref-icon a:hover {
+  color: #fee715ff;
+}
+
+.ref-icon a:not(:hover) {
+  -webkit-transition: 300ms ease-in;
+  transition: 300ms ease-in;
+}
+
 footer {
   text-align: center;
   color: #fff;
