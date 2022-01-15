@@ -108,6 +108,7 @@ blockquote {
 	display: block;
 	margin-top: 4em;
 	padding: 10px 15px;
+    
 }
 
 
@@ -118,6 +119,10 @@ blockquote cite{
     text-decoration: underline;
     margin-top:15px;
     color: $accent-color;
+}
+
+#quote {
+	min-height: 130px;
 }
 
 .ref-icon{
@@ -148,4 +153,24 @@ footer{
     text-align: center;
     color:$accent-color;
     padding:25px 0;
+}
+
+
+// animation for generate quote
+
+@keyframes rotateBtn{
+    from{
+        rotate:(0deg);
+    }
+    to{
+        rotate:(180deg);
+    }
+}
+
+
+.rotate{
+    animation-name: rotateBtn;
+    animation-duration: 500ms;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
 }
