@@ -174,3 +174,90 @@ footer{
     animation-timing-function: ease-in;
     animation-iteration-count: infinite;
 }
+
+// responsive starts
+
+@media screen and (max-width:1299px){
+
+    .wrapper {
+        max-width: 90% !important;
+    }
+
+}
+
+@media screen and (max-width:991px){
+    #quote-mark {
+        font-size: 8.5em;
+    }
+
+    blockquote {
+        font-size: 1.5em;
+    }
+}
+
+@media screen and (max-width:767px){
+    #quote-mark {
+        font-size: 7em;
+    }
+
+    blockquote {
+        font-size: 1.3em;
+    }
+
+    blockquote cite {
+        font-size: 18px;
+    }
+
+    #quote {
+        min-height: 110px;
+    }
+}
+
+@media screen and (max-width:576px){
+    .quote-cont {
+        min-width: auto;
+    }
+
+    .flex-box .box:first-child, .flex-box .box:last-child {
+        width: 100%;
+    }
+
+    .flex-box {
+        flex-direction: column;
+    }
+
+    blockquote {
+        margin-top: 0em;
+    }
+
+    #quote-mark {
+        height: 70px;
+        display: inline-block;
+        margin-top: 20px;
+    }
+
+    .flex-box .box:first-child {
+        height: 95px;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    .quote-cont {
+        padding: 25px 15px;
+    }
+
+    blockquote cite {
+        margin-top: 22px;
+    }
+
+    .ref-icon {
+	margin-top: 25px;
+    }
+
+    #quote {
+        min-height: 100px;
+        text-align: justify;
+    }
+}
