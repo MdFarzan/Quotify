@@ -9,11 +9,11 @@ async function getQuote(){
         document.querySelector('#author').innerText = author;
 
         // setting href attribute for share with link
-        document.querySelector('#twitter-link').setAttribute('href',`https://twitter.com/intent/tweet?url=https://mdfarzan.github.io/quotify&text=${quote} --By ${author}`);
+        document.querySelector('#twitter-link').setAttribute('href',`https://twitter.com/intent/tweet?url=https://mdfarzan.github.io/Quotify&text=${quote} --By ${author}`);
 
-        document.querySelector('#facebook-link').setAttribute('href',`https://www.facebook.com/sharer/sharer.php?u=https://mdfarzan.github.io/quotify`);
+        document.querySelector('#facebook-link').setAttribute('href',`https://www.facebook.com/sharer/sharer.php?u=https://mdfarzan.github.io/Quotify`);
 
-        document.querySelector('#telegram-link').setAttribute('href',`https://t.me/share/url?url=https://mdfarzan.github.io/quotify&text=${quote} -- By ${author}`);
+        document.querySelector('#telegram-link').setAttribute('href',`https://t.me/share/url?url=https://mdfarzan.github.io/Quotify&text=${quote} -- By ${author}`);
 
         document.querySelector('#generate-quote i').classList.remove('rotate');
     }).catch(error=>{
