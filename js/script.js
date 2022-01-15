@@ -7,9 +7,17 @@ async function getQuote(){
         
         document.querySelector('#quote').innerText = quote;
         document.querySelector('#author').innerText = author;
+
+        // setting href attribute for share with link
+        document.querySelector('#twitter-link').setAttribute('href',`https://twitter.com/intent/tweet?url=https://mdfarzan.github.io/quotify&text=${quote} --By ${author}`);
+
+        document.querySelector('#facebook-link').setAttribute('href',`https://www.facebook.com/sharer/sharer.php?u=https://mdfarzan.github.io/quotify`);
+
+        document.querySelector('#telegram-link').setAttribute('href',`https://t.me/share/url?url=https://mdfarzan.github.io/quotify&text=${quote} -- By ${author}`);
+
         document.querySelector('#generate-quote i').classList.remove('rotate');
     }).catch(error=>{
-        alert(error);
+        alert('Unable to show quote!' + error);
     });
         
     
